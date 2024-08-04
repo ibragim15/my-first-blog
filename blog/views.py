@@ -7,5 +7,5 @@ def index (request):
     return render(request, "blog/index.html", {})
 
 
-def categ(request):
-    return HttpResponse('<h1>page1<h1>')
+def categ(request, catid):
+    return HttpResponse(f'<h1>Число {catid}</h1>')
